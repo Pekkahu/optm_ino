@@ -1,0 +1,9 @@
+// change the value of DEBUG to see the value coming from Serial.print()
+// and change it to zero soo that compiler ignores this line with debug(x) --> Serial.print(F(x)
+
+#if DEBUG == 1
+#define debug(x) Serial.print(F(x))
+#define debugln(x) Serial.println(F(x))
+#else
+#define debug(X)
+#define debugln(X)
